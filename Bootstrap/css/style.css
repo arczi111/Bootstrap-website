@@ -173,6 +173,7 @@ button, a, a.btn,
 }
 h3.heading{
    text-align: center;
+   margin-bottom: 3.2rem;
 }
 h3.heading > a{
    color:#505962;
@@ -269,12 +270,12 @@ h3.heading > a::before {
 }
 .product-item img:hover{   
    transform: scale(1.2);
-   filter: brightness(80%);
+   filter: brightness(108%);
    cursor: zoom-in;
 }
 
 .product-item img{
-   transition: transform .3s ease;
+   transition: all .3s ease;
 }
 /*============= PRICING SECTION =============*/
 
