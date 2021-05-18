@@ -1,0 +1,321 @@
+/*============= RESETS =============*/
+
+/*-- iPhone X Remove Gutters --*/
+html {
+   padding: env(safe-area-inset);
+}
+
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body{
+   overflow-x:hidden ;
+   font-family: 'Lato', sans-serif;
+   color: #505962;
+}
+.text-leaf{
+   color: #7dc738;
+   font-weight: 400;
+   letter-spacing: .1rem;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+   content:"";
+   height: 4.3rem;
+   display: block;
+   margin-top: -4.3rem;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+
+
+/*============= NAVIGATION =============*/
+.navbar {
+   padding: .7rem 3rem;
+   text-transform: uppercase;
+   font-size: 1rem;
+   font-weight: 400;
+   letter-spacing: .1rem;
+   transition: background-color .5s ease ;
+}
+.navbar-brand img {
+   height: 2.3rem;
+}
+.navbar-nav li { 
+   padding-right: .8rem;
+   font-size: 1.1rem;
+}
+.navbar-nav .nav-link {
+   color: white;
+   padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+   color:#7dc738;
+}
+.navbar.solid,
+.navbar.solid-toggle{
+   background:rgba(0, 0, 0, .7);
+   transition: background-color 1s ease ;
+}
+.custom-toggler-icon{
+   color: white;
+   font-size: 1.6rem;
+}
+/*-- Remove Button Outline --*/
+
+button:focus, a:focus, a.btn:focus{
+   outline: 0;
+    -webkit-appearance: none; /*just in case */
+   box-shadow: none; /*just in case */
+}
+
+button, a, a.btn,
+.down-arrow i
+{
+   transition: all .4s ease;
+}
+/*============= LANDING PAGE =============*/
+
+/*--- Fixed Landing Page Section --*/
+.landing{
+ position: relative;  
+ width: 100%;
+ height: 100vh;
+ display: table;
+ z-index: -1;
+}
+.home-wrap{
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+.home-inner{
+   background-image: url('../img/background_13.jpg');
+   filter: brightness(45%);
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   display: table;
+}
+
+/*-- Landing Page Caption --*/
+
+.caption{
+   font-size: 3rem;
+   z-index: 1;
+   position: absolute;
+   top: 40%;
+   width: 100%;
+   max-width: 100%;
+}
+.caption h1{
+   font-size: 3.2rem;
+   letter-spacing: 0.3rem;
+   text-shadow: .1rem .1rem .8rem black;
+   padding-bottom: 1.4rem;
+}
+.caption a{
+   text-decoration: none;
+}
+.caption h3{
+   font-size: 1.5rem;
+   letter-spacing: 0.1rem;
+   text-shadow: .1rem .1rem .5rem black;
+}
+.caption .btn-lg {
+   border-width: medium;
+   padding: .6rem 1.5rem;
+   font-size: 1.1rem;
+}
+
+/*-- Bouncing Down Arrow --*/
+.arrow{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+.down-arrow i{
+   color: white;
+   font-size: 2.1rem;
+   opacity: .8;
+   animation: heartBeat 4s infinite;
+    -webkit-animation: heartBeat 4s infinite;
+}
+.down-arrow i:hover{
+   color: #7dc738;
+   font-size: 2.1rem;
+}
+.btn-themeProducts{
+   background-color: #71b333;
+   color: white;
+}
+.btn-themeProducts:hover{
+   background-color: #5f922f;
+   color: white;
+}
+
+/*============= FEATURES SECTION =============*/
+.btn-sm{
+   border-width: medium;
+   border-radius: 0;
+   padding: .5rem 1.1rem;
+   text-transform: uppercase;
+   font-size: .9rem;
+   margin: 1rem;
+}
+h3.heading{
+   text-align: center;
+}
+h3.heading > a{
+   color:#505962;
+   position: relative;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 2.4rem;
+   text-align: center;
+   margin-bottom: 0;
+}
+h3.heading > a:hover{
+   color: #7dc738;
+}
+
+h3.heading > a::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 3.2px;
+   top: 3.2rem;
+   left: 0;
+   background-color: #7dc738;
+   transform: scaleX(0.3);
+   transition: all 0.2s ease-in-out 0s;
+ }
+ h3.heading  > a:hover::before { 
+   transform: scaleX(1);
+ }
+
+[class*='col-']{
+   padding: 1rem;
+}
+.fixed {
+   overflow: hidden; /*-- Included for iOS update --*/
+}
+.goals span{
+   color: #77b141;
+   margin-bottom: 1rem;
+}
+.goals h3{
+   text-transform: uppercase;
+   font-size: 1.3rem;
+   font-weight: 700;
+   padding-bottom: .4rem;
+
+}
+/*===== FIXED BACKGROUND IMG DARK =====*/
+
+/*--- iOS Fixed Background Image --*/
+.fixed{
+   position: relative;  
+   width: 100%;
+   overflow: hidden;
+  }
+  .fixed-wrap{
+     clip: rect(0, auto, auto, 0);
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: -9999;
+  }
+  .fixed-dark{
+     background-image: url('../img/DarkBG_6.jpg');
+     position: fixed;
+     height: 100%;
+     width: 100%;
+     background-size: cover;
+     background-position: center center;
+     -webkit-transform: translateZ(0);
+     transform: translateZ(0);
+     will-change: transform;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     display: table;
+  }
+  .dark{
+     background-color: rgba(19, 37, 41, 0.8);
+     padding: 7rem 0;
+     z-index: 1000;
+  }
+  .fixed .heading-underline{
+     width: 10rem;
+  }
+.care{
+   color: #7dc738;
+}
+/*============= PORTFOLIO SECTION =============*/
+
+
+/*============= PRICING SECTION =============*/
+
+
+/*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
+
+/*--- Team Light Background Image --*/
+
+
+/*============= SKILLS SECTION =============*/
+
+
+/*============= CLIENTS SECTION =============*/
+
+
+/*============= CONTACT SECTION =============*/
+
+
+/*--- Contact Form --*/
+
+
+/*============= TOP SCROLL =============*/
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+
+
+/* Devices under 768px (md) */
+
+
+/* Devices under 576px (sm) */
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
