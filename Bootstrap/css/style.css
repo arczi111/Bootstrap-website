@@ -263,9 +263,19 @@ h3.heading > a::before {
 .care{
    color: #7dc738;
 }
-/*============= PORTFOLIO SECTION =============*/
+/*============= PRODUCT SECTION =============*/
+.product-item{
+   overflow: hidden;
+}
+.product-item img:hover{   
+   transform: scale(1.2);
+   filter: brightness(80%);
+   cursor: zoom-in;
+}
 
-
+.product-item img{
+   transition: transform .3s ease;
+}
 /*============= PRICING SECTION =============*/
 
 

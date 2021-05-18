@@ -66,8 +66,14 @@ window.addEventListener("scroll", () => {
 // });
 
 /*========== LIGHTBOX IMAGE GALLERY ==========*/
-
-
+window.onload = function(){
+    
+lightbox.option({
+    'resizeDuration': 500,
+    'wrapAround': true,
+    'imageFadeDuration': 500
+    })
+}
 /*========== MEET THE TEAM CAROUSEL ==========*/
 
 
