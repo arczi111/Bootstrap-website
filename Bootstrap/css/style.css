@@ -198,7 +198,7 @@ h3.heading > a::before {
    left: 0;
    background-color: #7dc738;
    transform: scaleX(0.3);
-   transition: all 0.2s ease-in-out 0s;
+   transition: all 0.3s ease-in-out 0s;
  }
  h3.heading  > a:hover::before { 
    transform: scaleX(1);
@@ -277,9 +277,49 @@ h3.heading > a::before {
 .product-item img{
    transition: all .3s ease;
 }
-/*============= PRICING SECTION =============*/
-
-
+/*============= MAGAZINE SECTION =============*/
+.text-pro{
+   color: #4ec25d;
+   font-weight: 700;
+}
+.btn-pro{
+   background-color: #48b356;
+   color: white;
+}
+.btn-pro:hover{
+   background-color: #33883e;
+   color: white;
+}
+.magazine-column{
+   position: relative;
+   background-color: white;
+   height: 100%;
+   padding: 1.6rem;
+   border-top: .25rem solid #48b356;
+   box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.1);
+   transition: transform .4s ease;
+      overflow: hidden;
+}
+.magazine-column:hover {
+   transform: scale(1.13);
+}
+.magazine-column h4 {
+   font-size: 1.1rem;
+   font-weight:700 ;
+}
+.ribbon{
+   background-color:#505962 ;
+   color: white;
+   font-size: .8rem;
+   font-weight: 700;
+   height: 2rem;
+   width: 10rem;
+   padding-top: .4rem;
+   position: absolute;
+   transform: rotate(45deg);
+   right: -2.8rem;
+   top: 1.5rem;
+}
 /*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
 
 /*--- Team Light Background Image --*/
