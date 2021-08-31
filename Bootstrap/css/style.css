@@ -358,6 +358,9 @@ h3.heading > a::before {
 .card:hover{
    transform: scale(.95);
 }
+button.owl-dot span{
+   background-color: #071f19!important;
+}
 button.owl-dot.active span{
    background-color: #71b333!important;
 }
@@ -381,7 +384,7 @@ ul.social li a{
 ul.social li a:hover{
    color:#33883e ;
 }
-/*============= SKILLS SECTION =============*/
+/*============= ABOUT US SECTION =============*/
 
 
 /*============= CLIENTS SECTION =============*/
